@@ -1,0 +1,17 @@
+### GET a list of events
+GET http://localhost:8000/api/events
+
+### GET a list of performances
+GET http://localhost:8000/api/performances
+
+### GET a list of artists
+GET http://localhost:8000/api/artists
+
+### GET a list of customers
+GET http://localhost:8000/api/customers
+
+### GET a list of acts
+GET http://localhost:8000/api/acts
+
+### GET a list of act with artists
+GET http://localhost:8000/api/actartists
