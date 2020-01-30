@@ -6,18 +6,21 @@ import './Sidebar.css'
 function Sidebar(props){
     return(
       <Menu className="sideBar">
-        <p className="menu-item-bar-actu">
+        <Link className="menu-item-bar-actu" to="/">
+          LE SPECTACLE          
+        </Link>        
+        <Link className="menu-item-bar-actu" to="/show">
           LES NUMEROS
-        </p>
-        <p className="menu-item-bar-actu">
-          LES ARTISTES
-        </p>
-        <p className="menu-item-bar-actu">
-        LE SPECTACLE
-        </p>
-        <p className="menu-item-bar-actu">
-        RESERVER
-        </p>
+        </Link>
+        <Link className="menu-item-bar-actu" to="/artists">
+          LES ARTISTES          
+        </Link>
+        <Link className="menu-item-bar-actu" to="/pictures">
+          GALERIE PHOTOS         
+        </Link>        
+        <Link className="menu-item-bar-actu" to="/dates">
+          VOIR LES DATES        
+        </Link>
         <p className="menu-item-bar-actu">
         NOUS SUIVRE
         </p>

@@ -1,38 +1,220 @@
-.App {
+.headerBar{
+  background-color:black;
+  font-size:1em;
+  font-family: 'Amatic SC', cursive;
+  min-width:100%;
+  height:60px;
+  color:white;
+  position:top;
+  padding-top:12px;
+  margin-bottom:0;
+  padding-bottom:0;
+ }
+
+.headerBar h1{
+  margin:0 0 0 10vh ;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.homeImage{
+  background-image: url('https://zupimages.net/up/20/05/9kyr.png'),url('https://zupimages.net/up/20/05/cdgk.jpg');
+  height:620px;
+  background-color: black;
+  background-repeat:no-repeat,no-repeat;
+  background-position:left,right;
+}
+
+.homeImage p{
+  padding-top:490px;
+  font-family: 'Amatic SC', cursive;
+  color:white;
+  font-size:6.2em;
+  font-weight:bold;
+  margin-top:0;
+  margin-bottom:6px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homeButton{
+  background-color:black;
+  padding:6px 0 6px 0;
+	font:bold 1.5em 'Amatic SC', cursive;
+	color:white;
+	border-radius:2px;
+	width:100px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.flexButton{
+  display:none;
+}
+
+.espace{
+  margin-top:1px;
+  background-color:white;
+}
+.ArtistCard{
+  width:28%;
+  background-color:black;
+  display:flex;
+  margin:auto;
+  margin-top:2%;
+  color:white;
+  font-family: 'Amarante', cursive;
+  border:3px rgb(51, 50, 50) groove;
+}
+.desc{
+  font-size:3em;
+}
+.special{
+  font-size:1.8em;
+}
+
+.photoArtist img{
+  width:240px;
+  height:370px;
+  margin:2%;
+}
+
+.descArtist{
+  margin:5%;
+}
+
+.FlexArtist{
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.OurWilders{
+  font-family: 'Amarante', cursive;
+  font-size:1.8em;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px)
+{
+  .homeImage{
+    background-image: url('https://zupimages.net/up/20/05/nut1.jpg');
+    height:540px;
+    background-color: black;
+    background-repeat:no-repeat;
+    margin-top:0;
+    padding-top:0
+  }
+  .flexButton{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin:0 0 5vh 5vh;
+    width:80%;
+  }
+  .homeImage p{
+    padding-top:370px;
+    font-family: 'Amatic SC', cursive;
+    color:white;
+    font-size:2.2em;
+    font-weight:bold;
+    margin-top:0;
+    margin-bottom:6px;
+  }
+  .carouselImage img{
+    width:400px;
+  }
+  .photoArtist img{
+    width:140px;
+    height:210px;
+    margin:2%;
+  }
+  .descArtist{
+    margin:2%;
+  }
+  .ArtistCard{
+    width:92%;
+    background-color:black;
+    display:flex;
+    margin:2%;
+    color:white;
+    font-family: 'Amarante', cursive;
+    border:3px rgb(51, 50, 50) groove;
+  }
+  .desc{
+    font-size:2em;
+  }
+  .special{
+    font-size:1.2em;
+  }
+  .FlexArtist{
+    display:flex;
+    flex-direction:column;
+  }
+  .DateShow{
+    width:90%;
+    background-color:white;
+    display:flex;
+    margin:2%;
+    color:black;
+    font-family: 'Amarante', cursive;
+    border:3px rgb(51, 50, 50) groove;
+  }
+
+  .WhiteCard{
+    display:flex;
+    flex-flow:column wrap;
+    margin-left:2%;
+  }
+
+  .WhiteCard p{
+    margin-top:2px;
+    margin-bottom:2px;
+    font-family: 'Catamaran', sans-serif;
+  }
+
+  .Cube{
+    background-color:black;
+    height:100px;
+    width:100px;
+    font-family: 'Amatic SC', cursive;
+    color:white;
+    font-size:2.6em;
+  }
+  .Cube p{
+    margin:0;
+  }
+  .DateShow .homeButton{
+    margin-left:50%;
+    margin-bottom:2%;
+  }
+  .imgFlex{
+    max-width:133px;
+    height:auto;
+    margin:2px;
+  }
+  .flexImages{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  .OurWilders h2{
+    margin-top:12px;
+    margin-bottom:12px;
+  }
+  .photoPerform{
+    width:414px;
+    height:280px;
+    object-fit:cover;
+  }
+  .descPerform{
+    text-align: justify;
+    width:95%;
+    margin:auto;
+    height:230px;
+  }
+  .Perform .homeButton{
+    text-align:center;
+    margin-left:40%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

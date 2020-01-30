@@ -78,4 +78,9 @@
   .menu-item-bar{
     margin-left:30px;
   }
+
+  .menu-item-bar-actu{
+    font-family: 'Amarante', cursive;
+    font-size:1.4em;
+  }
   
