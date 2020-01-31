@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+import {useHistory} from 'react-router-dom';
 
 
 function renderSwitch(showdate){
@@ -35,6 +35,7 @@ function renderSwitch(showdate){
 
 
 function DateShow ({title, showdate, showtime,showdescription,place}){
+    let history=useHistory()
   return(
     <div className="DateShow">
         <div className="Cube">
@@ -46,7 +47,7 @@ function DateShow ({title, showdate, showtime,showdescription,place}){
             <p>Le {showdate.slice(8,10)}/{showdate.slice(5,7)}/{showdate.slice(2,4)} à {showtime.slice(0,5)} au {place}</p>    
             <p>{showdescription}</p>
             <p>Tarif unique à 9.00€</p>
-            <button className="homeButton">RESERVER</button>
+            <button className="homeButton" onClick={event=> { event.preventDefault(); history.push(`/books`) }} href={`/books`}>RESERVER</button>
         </div>
     </div>
   )  

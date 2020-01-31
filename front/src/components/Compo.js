@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function ArtistCard ({firstname,lastname,speciality,photo}){
+function Compo ({firstname,lastname,speciality,photo}){
   return(
     <div className="ArtistCard">
         <div className="photoArtist">
@@ -15,4 +15,4 @@ function ArtistCard ({firstname,lastname,speciality,photo}){
   )  
 }
 
-export default ArtistCard;
+export default Compo;

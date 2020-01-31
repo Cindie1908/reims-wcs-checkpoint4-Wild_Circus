@@ -21,9 +21,23 @@ function Sidebar(props){
         <Link className="menu-item-bar-actu" to="/dates">
           VOIR LES DATES        
         </Link>
-        <p className="menu-item-bar-actu">
-        NOUS SUIVRE
-        </p>
+        <div>
+          <p className="menu-item-bar-actu">
+          NOUS SUIVRE :
+          </p>
+          <figure className="figureLogo">
+            <a href="https://github.com/Cindie1908/reims-wcs-checkpoint4-Wild_Circus" title="github">
+              <img className="logoLink" alt="show" src="https://zupimages.net/up/20/05/og8t.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/cindie-jouvin-42019a168/" title="linkedin">
+              <img className="logoLink" alt="show" src="https://zupimages.net/up/20/05/m043.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/https://www.facebook.com/cindie.jouvin" title="facebook">
+              <img className="logoLink" alt="show" src="https://zupimages.net/up/20/05/d9h1.png" />
+            </a>    
+          </figure>
+          
+        </div>
       </Menu>)
 };
 
